@@ -31,43 +31,28 @@ OpenCore: 0.6.5
 Clover: r5128
 
 ## What's Working
-CPU(with proper power management/HWP)
-
-Basic Display function
-
-Wifi(with native UI): https://github.com/OpenIntelWireless/itlwm
-
-Trackpad(multitouch and gesture support): VoodooInput, VoodooPS2Controller, VoodooRMI
-
-Keyboard
-
-USB
-
-Webcam
-
-Sleep
-
-Type c to HDMI external display support
-
-Side volume keys
+* CPU(with proper power management/HWP)
+* Basic Display function
+* Wifi(with native UI): https://github.com/OpenIntelWireless/itlwm
+* Trackpad(multitouch and gesture support): VoodooInput, VoodooPS2Controller, VoodooRMI
+* Keyboard
+* USB
+* Webcam
+* Sleep
+* Type c to HDMI external display support
+* Side volume keys
 
 ## What's partially working
-Audio: Works fine with alcid=13. However, sound is small and only the upper speakers are working. Other ids made the sound larger, but had some problems like only right side speaker working. I haven't tested all ids, so feel free to try out other numbers.
-
-Bluetooth: Support for Intel Bluetooth is still in early stage. Only some devices pairs, connects and works well. https://github.com/OpenIntelWireless/IntelBluetoothFirmware
-
-Display brightness: Highest brighness isn't that high, and lowest brightness makes the backlight go off. Brightness changes in only first few steps.
-
-Keyboard hotkeys: Sound change and keyboard backlight toggle works fine, brightness and media doesn't work.
+* Audio: Works fine with alcid=13. However, sound is small and only the upper speakers are working. Other ids made the sound larger, but had some problems like only right side speaker working. I haven't tested all ids, so feel free to try out other numbers.
+* Bluetooth: Support for Intel Bluetooth is still in early stage. Only some devices pairs, connects and works well. https://github.com/OpenIntelWireless/IntelBluetoothFirmware
+* Display brightness: Highest brighness isn't that high, and lowest brightness makes the backlight go off. Brightness changes in only first few steps.
+* Keyboard hotkeys: Sound change and keyboard backlight toggle works fine, brightness and media doesn't work.
 
 ## What's not working
-Thunderbolt 3: Causes kernel panic while waking up from sleep. Disabled until further investigation.
-
-USB C ports' USB 3.0 support: Related to Thunderbolt controllers.
-
-Touch Screen: Heard that it is easy to enable. I have no intention of using it in macOS, so kept it disabled.
-
-SD Card reader: Heard reports about sucessfully enabling. I have no intention of using it in macOS, so kept it disabled.
+* Thunderbolt 3: Causes kernel panic while waking up from sleep. Disabled until further investigation.
+* USB C ports' USB 3.0 support: Related to Thunderbolt controllers.
+* Touch Screen: Heard that it is easy to enable. I have no intention of using it in macOS, so kept it disabled.
+* SD Card reader: Heard reports about sucessfully enabling. I have no intention of using it in macOS, so kept it disabled.
 
 ## Notes
 * I highly recommend building your own files by following Dortania's excellent guide. it will help you understand the big picture and how to use my files correctly. After you went through all the guide, you can use my files as an referance. 
