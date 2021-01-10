@@ -7,6 +7,8 @@ I will provide information about how I made my EFI(& CLOVER) and about what work
 Hope this will help other Spectre users get engaged into the Hackintosh scene.
 
 ## Machine information
+|Parts|Details
+|:---:|:---:|
 Model | HP Spectre x360 13-inch Late 2017 (13t-ae000)
 CPU | Intel i5-8250U (Coffee Lake)
 RAM | 8GB RAM
