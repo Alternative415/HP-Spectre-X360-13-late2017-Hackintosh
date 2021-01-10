@@ -64,9 +64,10 @@ Clover: r5128
 - Initial Release
 
 ## Credits
-Dortania
-acidanthera
-Corpnewt
-WoadZS: https://github.com/WoadZS
-Rehabman
+* Dortania
+* acidanthera
+* Corpnewt
+* WoadZS: https://github.com/WoadZS
+* Rehabman
+
 and many others that I have forgotten to include, sorry.
