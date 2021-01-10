@@ -20,6 +20,7 @@ SSD | Samsung 970 EVO Plus 1TB (Originally was Intel Series 600p SSD)
 
 ## macOS information
 macOS 11 Big Sur
+
 11.1
 
 ## Bootloader information
