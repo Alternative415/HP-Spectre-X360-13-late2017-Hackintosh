@@ -69,6 +69,10 @@ Touch Screen: Heard that it is easy to enable. I have no intention of using it i
 
 SD Card reader: Heard reports about sucessfully enabling. I have no intention of using it in macOS, so kept it disabled.
 
+## Notes
+* I highly recommend building your own files by following Dortania's excellent guide. it will help you understand the big picture and how to use my files correctly. After you went through all the guide, you can use my files as an referance. 
+* The config.plists in each folder doesn't have any SMBIOS data to avoid any mixups. Please add your own. I used MacBookPro15,2. MacBookPro15,4 looks fine too.
+* If it somehow failes to boot with all my files, the problem is likely to be the DSDT.aml. DSDT is known to be unique to each devices. You will have to make your own DSDT and fix it with patches.
 
 ## Changelog
 ### 2021.01.10
