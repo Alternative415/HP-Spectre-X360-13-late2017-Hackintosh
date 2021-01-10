@@ -35,9 +35,9 @@ CPU(with proper power management/HWP)
 
 Basic Display function
 
-Wifi(with native UI)
+Wifi(with native UI): https://github.com/OpenIntelWireless/itlwm
 
-Trackpad(multitouch and gesture support)
+Trackpad(multitouch and gesture support): VoodooInput, VoodooPS2Controller, VoodooRMI
 
 Keyboard
 
@@ -54,7 +54,7 @@ Side volume keys
 ## What's partially working
 Audio: Works fine with alcid=13. However, sound is small and only the upper speakers are working. Other ids made the sound larger, but had some problems like only right side speaker working. I haven't tested all ids, so feel free to try out other numbers.
 
-Bluetooth: Support for Intel Bluetooth is still in early stage. Only some devices pairs, connects and works well.
+Bluetooth: Support for Intel Bluetooth is still in early stage. Only some devices pairs, connects and works well. https://github.com/OpenIntelWireless/IntelBluetoothFirmware
 
 Display brightness: Highest brighness isn't that high, and lowest brightness makes the backlight go off. Brightness changes in only first few steps.
 
@@ -74,3 +74,10 @@ SD Card reader: Heard reports about sucessfully enabling. I have no intention of
 ### 2021.01.10
 - Initial Release
 
+## Credits
+Dortania
+acidanthera
+Corpnewt
+WoadZS: https://github.com/WoadZS
+Rehabman
+and many others that I have forgotten to include, sorry.
