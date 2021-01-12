@@ -66,6 +66,8 @@ Clover: r5128
 - SDCard Reader now supported.(Only Clover: I will focus more on clover for now. OC and their kext handing is too messed up right now.)
 - Keyboard Brightness Hotkeys now work. DSDT patches: https://www.tonymacx86.com/threads/guide-high-sierra-on-hp-spectre-x360-8th-gen-coffee-lake.251330/
 - Fixed screen brightness only having 4 levels.
+- USB Port fixup. Unused ports cleaned.
+- Tweaked Clover config.plist to be more clean.
 
 ## Credits
 * Dortania
