@@ -37,6 +37,7 @@ Clover: r5128
 * Trackpad(multitouch and gesture support): VoodooInput, VoodooPS2Controller, VoodooRMI
 * Keyboard
 * USB
+* SD Card Reader: Might be unstable. Expect side effects when sleep/wake up.
 * Webcam
 * Sleep
 * Type c to HDMI external display support
@@ -46,13 +47,12 @@ Clover: r5128
 * Audio: Works fine with alcid=13. However, sound is small and only the upper speakers are working. Other ids made the sound larger, but had some problems like only right side speaker working. I haven't tested all ids, so feel free to try out other numbers.
 * Bluetooth: Support for Intel Bluetooth is still in early stage. Only some devices pairs, connects and works well. https://github.com/OpenIntelWireless/IntelBluetoothFirmware
 * Display brightness: Highest brighness isn't that high, and lowest brightness makes the backlight go off. Brightness changes in only first few steps.
-* Keyboard hotkeys: Sound change and keyboard backlight toggle works fine, brightness and media doesn't work.
+* Keyboard hotkeys: Sound change, Screen Brightness change and keyboard backlight toggle works fine, media buttons don't work.
 
 ## What's not working
 * Thunderbolt 3: Causes kernel panic while waking up from sleep. Disabled until further investigation.
 * USB C ports' USB 3.0 support: Related to Thunderbolt controllers.
 * Touch Screen: Heard that it is easy to enable. I have no intention of using it in macOS, so kept it disabled.
-* SD Card reader: Heard reports about sucessfully enabling. I have no intention of using it in macOS, so kept it disabled.
 
 ## Notes
 * I highly recommend building your own files by following Dortania's excellent guide. it will help you understand the big picture and how to use my files correctly. After you went through all the guide, you can use my files as an referance. 
@@ -62,6 +62,9 @@ Clover: r5128
 ## Changelog
 ### 2021.01.10
 - Initial Release
+### 2021.01.12
+- SDCard Reader now supported.
+- Keyboard Brightness Hotkeys now work. DSDT patches: https://www.tonymacx86.com/threads/guide-high-sierra-on-hp-spectre-x360-8th-gen-coffee-lake.251330/
 
 ## Credits
 * Dortania
@@ -69,5 +72,6 @@ Clover: r5128
 * Corpnewt
 * WoadZS: https://github.com/WoadZS
 * Rehabman
+* x86.co.kr
 
 and many others that I have forgotten to include, sorry.
