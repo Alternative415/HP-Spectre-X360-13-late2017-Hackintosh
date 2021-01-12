@@ -32,23 +32,22 @@ Clover: r5128
 
 ## What's Working
 * CPU(with proper power management/HWP)
-* Basic Display function
-* Wifi(with native UI): https://github.com/OpenIntelWireless/itlwm
+* Display functions(Color, Brightness, etc)
+* Wifi(with native UI): https://github.com/OpenIntelWireless/itlwm Still work in progress, but the latest alpha(1.2.0 by now) works without any hiccups for me.
 * Trackpad(multitouch and gesture support): VoodooInput, VoodooPS2Controller, VoodooRMI
 * Keyboard
 * USB
 * SD Card Reader: Might be unstable. Expect side effects when sleep/wake up.
 * Webcam
-* Type c to HDMI external display support
+* Type C to HDMI external display support
 * Side volume keys
 * Sidecar(Wired)
 
 ## What's partially working
 * Audio: Works fine with alcid=13. However, sound is small and only the upper speakers are working. Other ids made the sound larger, but had some problems like only right side speaker working. I haven't tested all ids, so feel free to try out other numbers.
 * Bluetooth: Support for Intel Bluetooth is still in early stage. Only some devices pairs, connects and works well. https://github.com/OpenIntelWireless/IntelBluetoothFirmware
-* Display brightness: Highest brighness isn't that high, and lowest brightness makes the backlight go off. Maybe this is normal.
 * Keyboard hotkeys: Sound change, Screen Brightness change and keyboard backlight toggle works fine, media buttons don't work.
-* Sleep: If you try sleeping with power supplied, it wakes up automatically. Solution is to unplug power, go to sleep and plug in. Sleep without power supply works fine with minimum battery drainage. The behavior is suspected to be related to Thunderbolt 3 controllers not working.
+* Sleep: If you try sleeping with power supplied, it wakes up automatically. Solution is to unplug power, go to sleep and plug in. Sleep without power supply works fine with minimum battery drainage. This strange behavior is suspected to be related to Thunderbolt 3 controllers not working.
 
 ## What's not working
 * Thunderbolt 3: Causes kernel panic while waking up from sleep. Disabled until further investigation.
@@ -59,14 +58,14 @@ Clover: r5128
 * I highly recommend building your own files by following Dortania's excellent guide. it will help you understand the big picture and how to use my files correctly. After you went through all the guide, you can use my files as an referance. 
 * EFI is OpenCore files, CLOVER is Clover files(duh).
 * The config.plists in each folder doesn't have any SMBIOS data to avoid any mixups. Please add your own. I used MacBookPro15,2. MacBookPro15,4 looks fine too.
-* If it somehow failes to boot with all my files, the problem is likely to be the DSDT.aml. DSDT is known to be unique to each devices. You will have to make your own DSDT and fix it with patches.
+* If it somehow failes to boot with all my files, the problem is likely to be the DSDT.aml. DSDT is known to be unique to each devices. You will have to make your own DSDT and fix it with patches. Major patches are Battery and brightness. Take a look at my DSDT to see how I patched them. You can look for tutorials by rehabman in Tonymac.
 
 ## Changelog
 ### 2021.01.10
 - Initial Release
 ### 2021.01.12
-- SDCard Reader now supported.(Only Clover: I will focus more on clover for now. OC and their kext handing is too messed up right now.)
-- Keyboard Brightness Hotkeys now work. DSDT patches: https://www.tonymacx86.com/threads/guide-high-sierra-on-hp-spectre-x360-8th-gen-coffee-lake.251330/
+- SDCard Reader now supported.(Only Clover)
+- Screen Brightness Hotkeys now work. DSDT patches: https://www.tonymacx86.com/threads/guide-high-sierra-on-hp-spectre-x360-8th-gen-coffee-lake.251330/
 - Fixed screen brightness only having 4 levels.
 - USB Port fixup. Unused ports cleaned.
 - Tweaked Clover config.plist to be more clean.
@@ -78,5 +77,6 @@ Clover: r5128
 * WoadZS: https://github.com/WoadZS
 * Rehabman
 * x86.co.kr
+* Tonymacx86
 
 and many others that I have forgotten to include, sorry.
