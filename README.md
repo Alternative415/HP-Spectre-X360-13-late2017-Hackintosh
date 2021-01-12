@@ -39,23 +39,25 @@ Clover: r5128
 * USB
 * SD Card Reader: Might be unstable. Expect side effects when sleep/wake up.
 * Webcam
-* Sleep
 * Type c to HDMI external display support
 * Side volume keys
+* Sidecar(Wired)
 
 ## What's partially working
 * Audio: Works fine with alcid=13. However, sound is small and only the upper speakers are working. Other ids made the sound larger, but had some problems like only right side speaker working. I haven't tested all ids, so feel free to try out other numbers.
 * Bluetooth: Support for Intel Bluetooth is still in early stage. Only some devices pairs, connects and works well. https://github.com/OpenIntelWireless/IntelBluetoothFirmware
 * Display brightness: Highest brighness isn't that high, and lowest brightness makes the backlight go off. Maybe this is normal.
 * Keyboard hotkeys: Sound change, Screen Brightness change and keyboard backlight toggle works fine, media buttons don't work.
+* Sleep: If you try sleeping with power supplied, it wakes up automatically. Solution is to unplug power, go to sleep and plug in. Sleep without power supply works fine with minimum battery drainage. The behavior is suspected to be related to Thunderbolt 3 controllers not working.
 
 ## What's not working
 * Thunderbolt 3: Causes kernel panic while waking up from sleep. Disabled until further investigation.
-* USB C ports' USB 3.0 support: Related to Thunderbolt controllers.
+* USB C ports' USB 3.0 support: These ports' USB 3.0 is controlled by TB3 controllers. They show up in Opencore builds and works fine, but doesn't work after sleep/waking up. Cold boot makes it work again. They don't show up in Clover builds, so never working.
 * Touch Screen: Heard that it is easy to enable. I have no intention of using it in macOS, so kept it disabled.
 
 ## Notes
 * I highly recommend building your own files by following Dortania's excellent guide. it will help you understand the big picture and how to use my files correctly. After you went through all the guide, you can use my files as an referance. 
+* EFI is OpenCore files, CLOVER is Clover files(duh).
 * The config.plists in each folder doesn't have any SMBIOS data to avoid any mixups. Please add your own. I used MacBookPro15,2. MacBookPro15,4 looks fine too.
 * If it somehow failes to boot with all my files, the problem is likely to be the DSDT.aml. DSDT is known to be unique to each devices. You will have to make your own DSDT and fix it with patches.
 
