@@ -63,7 +63,7 @@ Clover: r5128
 ### 2021.01.10
 - Initial Release
 ### 2021.01.12
-- SDCard Reader now supported.
+- SDCard Reader now supported.(Only Clover: I will focus more on clover for now. OC and their kext handing is too messed up right now.)
 - Keyboard Brightness Hotkeys now work. DSDT patches: https://www.tonymacx86.com/threads/guide-high-sierra-on-hp-spectre-x360-8th-gen-coffee-lake.251330/
 
 ## Credits
