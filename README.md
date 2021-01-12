@@ -12,7 +12,7 @@ Hope this will help other Spectre users get engaged into the Hackintosh scene.
 |Parts|Details
 |:---:|:---:|
 Model | HP Spectre x360 13-inch Late 2017 (13t-ae000)
-CPU | Intel i5-8250U (Coffee Lake)
+CPU | Intel i5-8250U (Kaby-Lake R)
 RAM | 8GB RAM
 Graphics | UHD 620 Graphics
 Display | 13-inch FHD Touch display
@@ -46,7 +46,7 @@ Clover: r5128
 ## What's partially working
 * Audio: Works fine with alcid=13. However, sound is small and only the upper speakers are working. Other ids made the sound larger, but had some problems like only right side speaker working. I haven't tested all ids, so feel free to try out other numbers.
 * Bluetooth: Support for Intel Bluetooth is still in early stage. Only some devices pairs, connects and works well. https://github.com/OpenIntelWireless/IntelBluetoothFirmware
-* Display brightness: Highest brighness isn't that high, and lowest brightness makes the backlight go off. Brightness changes in only first few steps.
+* Display brightness: Highest brighness isn't that high, and lowest brightness makes the backlight go off. Maybe this is normal.
 * Keyboard hotkeys: Sound change, Screen Brightness change and keyboard backlight toggle works fine, media buttons don't work.
 
 ## What's not working
@@ -65,6 +65,7 @@ Clover: r5128
 ### 2021.01.12
 - SDCard Reader now supported.(Only Clover: I will focus more on clover for now. OC and their kext handing is too messed up right now.)
 - Keyboard Brightness Hotkeys now work. DSDT patches: https://www.tonymacx86.com/threads/guide-high-sierra-on-hp-spectre-x360-8th-gen-coffee-lake.251330/
+- Fixed screen brightness only having 4 levels.
 
 ## Credits
 * Dortania
